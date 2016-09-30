@@ -11,6 +11,8 @@ good in my text editor so that it looks good in a browser or Markdown viewer.
 Being a masochist, I of course decided to create a guideline I could follow
 which would produce decent looking output without looking stupid in vim.
 
+
+<a name="conventions" />
 ## Basic conventions for Markdown files
 
   - Wrap all lines at 80 characters.
@@ -18,6 +20,7 @@ which would produce decent looking output without looking stupid in vim.
   - Denote _italic_ text using the underscore format: `_emphasized text_`.
   - Force a linebreak by ending a line with two spaces, no more.
 
+<a name="headings" />
 ## Headings
 
   - Header text must use the `atx-style` with no closing `#` character.
@@ -33,6 +36,7 @@ which would produce decent looking output without looking stupid in vim.
   - Headers must be preceded and followed by a newline except at the beginning
     of a file.
 
+<a name="horizontal-rules" />
 ## Horizontal Rules
 
 The convention for horizontal rules in this style guide is to use hyphens
@@ -43,6 +47,7 @@ guide, horizontal rules should span 80 characters for readability.
 --------------------------------------------------------------------------------
 ```
 
+<a name="lists" />
 ## Lists
 
   - **List items** must be indented 4 spaces further than their parent.
@@ -79,6 +84,7 @@ guide, horizontal rules should span 80 characters for readability.
         horses, being domesticated for use as mounts...
     ```
 
+<a name="code" />
 ## Code
 
   - **Inline code** must use single backticks and must not have spaces between
@@ -110,6 +116,7 @@ guide, horizontal rules should span 80 characters for readability.
     list and because it follows a fenced code block.
     ```
 
+<a name="tables" />
 ## Tables
 
 Like fenced code blocks, tables in Markdown are provided by Markdown Extra
@@ -156,6 +163,84 @@ Group                     | Domain          | First Appearance
 ShinRa                    | Mako Reactors   | FFVII
 Moogles                   | MogNet          | FFIII
 Vana'diel Chocobo Society | Chocobo Raising | FFXI:TOAU
+
+
+
+<a name="links" />
+## Links
+
+There are two ways to create links.
+
+```no-highlight
+[I'm an inline-style link](https://www.google.com)
+
+[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
+
+[I'm a reference-style link][Arbitrary case-insensitive reference text]
+
+[I'm a relative reference to a repository file](../blob/master/LICENSE)
+
+[You can use numbers for reference-style link definitions][1]
+
+Or leave it empty and use the [link text itself].
+
+URLs and URLs in angle brackets will automatically get turned into links. 
+http://www.example.com or <http://www.example.com> and sometimes 
+example.com (but not on Github, for example).
+
+Some text to show that the reference links can follow later.
+
+[arbitrary case-insensitive reference text]: https://www.mozilla.org
+[1]: http://slashdot.org
+[link text itself]: http://www.reddit.com
+```
+
+[I'm an inline-style link](https://www.google.com)
+
+[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
+
+[I'm a reference-style link][Arbitrary case-insensitive reference text]
+
+[I'm a relative reference to a repository file](../blob/master/LICENSE)
+
+[You can use numbers for reference-style link definitions][1]
+
+Or leave it empty and use the [link text itself].
+
+URLs and URLs in angle brackets will automatically get turned into links. 
+http://www.example.com or <http://www.example.com> and sometimes 
+example.com (but not on Github, for example).
+
+Some text to show that the reference links can follow later.
+
+[arbitrary case-insensitive reference text]: https://www.mozilla.org
+[1]: http://slashdot.org
+[link text itself]: http://www.reddit.com
+
+<a name="images" />
+## Images
+
+```no-highlight
+Here's our logo (hover to see the title text):
+
+Inline-style: 
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+
+Reference-style: 
+![alt text][logo]
+
+[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
+```
+
+Here's our logo (hover to see the title text):
+
+Inline-style: 
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+
+Reference-style: 
+![alt text][logo]
+
+[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
 
 
 ## Footnotes
